@@ -1,36 +1,38 @@
 # Pratical guide to building agents from OpenAI
 
-```
- Agentes são sitemas independentes que operam tarefas em seu lugar 
+> Agentes são sitemas independentes que operam tarefas em seu lugar 
  
-```
-* Workflow é a sequencia de passos para atingir o objetivo desejado, seja ele commitar um push no git, ou fazer uma pesquisa profunda
+> Workflow é a sequencia de passos para atingir o objetivo desejado, seja ele commitar um push no git, ou fazer uma pesquisa profunda
+
+---
 
 ## Caracteristicas principais dos agents
 
-1 - Agents conseguem reconhecer o workflow quando completo, corrigir ações se necessário e em caso de falha, pode ser transferido o poder de volta para o usuário
+1. Agents conseguem reconhecer o workflow quando completo, corrigir ações se necessário e em caso de falha, pode ser transferido o poder de volta para o usuário
 
-2-  Pode possuir diversas ferramentas para interagir com sistemas externos, sendo elas guardadas com contexto permitindo tomar ações de forma dinamica dependendo do estado do workflow, operando de forma clara com "barreias protetoras"
+2. Pode possuir diversas ferramentas para interagir com sistemas externos, sendo elas guardadas com contexto permitindo tomar ações de forma dinamica dependendo do estado do workflow, operando de forma clara com "barreias protetoras"
+
+---
 
 ## Quando devemos construir agents ?
 
-1 - Quando temos decições complexas - que envolvem nuancias, excessões ou decisões sensíveis ao contexto
+1. Quando temos decições complexas - que envolvem nuancias, excessões ou decisões sensíveis ao contexto
 
-2 - Dificuldade de manter regras - Sistemas que se tornaram pesados demais devido a quantidade de regras presentes para funcionar, tornando atualizações caras ou sujeitas a erros 
+2. Dificuldade de manter regras - Sistemas que se tornaram pesados demais devido a quantidade de regras presentes para funcionar, tornando atualizações caras ou sujeitas a erros 
 
-3 - Grande dependência a dados não estruturados - Cenários que envolvem a interpretação de linguagem natural, extraindo significado de documentos ou interagindo com pessoas atráves de conversas 
+3. Grande dependência a dados não estruturados - Cenários que envolvem a interpretação de linguagem natural, extraindo significado de documentos ou interagindo com pessoas atráves de conversas 
 
-* Antes de construir um agent, entenda se seu problema se encaixa nesses criterios, caso não, soluções deterministicas devem ser o suficiente 
+> Antes de construir um agent, entenda se seu problema se encaixa nesses criterios, caso não, soluções deterministicas devem ser o suficiente 
 
 ## Fundamentos do agent desing 
 
 De forma fundamental, o agente consiste em 3 componetes principais 
 
-1 - Modelo - Qual LLM vai dar poder de razão e descição para para o agent 
+1. Modelo - Qual LLM vai dar poder de razão e descição para para o agent 
 
-2 - Ferramentas - Funções externas ou APIs que ele pode usar para tomar ação 
+2. Ferramentas - Funções externas ou APIs que ele pode usar para tomar ação 
 
-3 - Intruções - Guia explicito e barreias protetoras defindo o comportamento do agent
+3. Intruções - Guia explicito e barreias protetoras defindo o comportamento do agent
 
 ## Selecionando seu modelo
 
@@ -42,11 +44,11 @@ A melhor abordagem seria criar um protótipo de agent com o modelo mais capaz pa
 
 Em resumo, os principios para escolher os modelos são:
 
-01 - Configure avaliações para estabelecer a linha base de performance que espera do agent
+1. Configure avaliações para estabelecer a linha base de performance que espera do agent
 
-02 - Foque em obeter a acurácia alvo com os melhores modelos disponíveis 
+2. Foque em obeter a acurácia alvo com os melhores modelos disponíveis 
 
-03 - Otimize para reduzir custo e latência trocando por modelos menores quando possível 
+3. Otimize para reduzir custo e latência trocando por modelos menores quando possível 
 
 ## Definindo ferramentas 
 
@@ -54,15 +56,14 @@ Ferramentas extendem as capacidades dos agents atráves de APIs e para sistemas 
 
 Cada ferramente deve ter uma definição padronizada, permetindo flexibilidade e multiplas relações entre agents e ferramentas. Uma boa documentação, testes de performance e ferramentas reutilizavéis melhoram descoberta, simplifica a manutenção e previne redundâncias 
 
-Agents necessitam de 3 tipos básicos de ferramentas:
+**Agents necessitam de 3 tipos básicos de ferramentas:**
 
 | Type | Descrição | Exemplo |
 |:---- | :-------: | :------ |
 | Data | Permite buscar informações necessárias para executar o workflow | Querys, Leitura de PDFs ou Docs, Pesquisa na web |
 | Ações | Permite interagir com sistemas e tomar ações como adicionar informações, criar documentos ou mandar msgs | Mandar Emails, fazer commit, Atender pessoas |
 | Orquestração | Agents por eles mesmo podem servir de ferramentas para outros agents | Agent de pesquisa, Agent para escrita, etc... |
- 
-  
+
 
 
 
