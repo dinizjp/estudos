@@ -27,7 +27,9 @@
 De forma fundamental, o agente consiste em 3 componetes principais 
 
 1 - Modelo - Qual LLM vai dar poder de razão e descição para para o agent 
+
 2 - Ferramentas - Funções externas ou APIs que ele pode usar para tomar ação 
+
 3 - Intruções - Guia explicito e barreias protetoras defindo o comportamento do agent
 
 ## Selecionando seu modelo
@@ -41,4 +43,26 @@ A melhor abordagem seria criar um protótipo de agent com o modelo mais capaz pa
 Em resumo, os principios para escolher os modelos são:
 
 01 - Configure avaliações para estabelecer a linha base de performance que espera do agent
-02 - Foque em obeter a acuracia 
+
+02 - Foque em obeter a acurácia alvo com os melhores modelos disponíveis 
+
+03 - Otimize para reduzir custo e latência trocando por modelos menores quando possível 
+
+## Definindo ferramentas 
+
+Ferramentas extendem as capacidades dos agents atráves de APIs e para sistemas sem APIs, agents podem usar modelos capazes de interagir com o computador diretamente como um ser humano faria 
+
+Cada ferramente deve ter uma definição padronizada, permetindo flexibilidade e multiplas relações entre agents e ferramentas. Uma boa documentação, testes de performance e ferramentas reutilizavéis melhoram descoberta, simplifica a manutenção e previne redundâncias 
+
+Agents necessitam de 3 tipos básicos de ferramentas:
+
+| Type | Descrição | Exemplo |
+|:---- | :-------: | :------ |
+| Data | Permite buscar informações necessárias para executar o workflow | Querys, Leitura de PDFs ou Docs, Pesquisa na web |
+| Ações | Permite interagir com sistemas e tomar ações como adicionar informações, criar documentos ou mandar msgs | Mandar Emails, fazer commit, Atender pessoas |
+| Orquestração | Agents por eles mesmo podem servir de ferramentas para outros agents | Agent de pesquisa, Agent para escrita, etc... |
+ 
+  
+
+
+
