@@ -1,7 +1,9 @@
 # Pratical guide to building agents from OpenAI
 
-""" Agentes são sitemas independentes que operam tarefas em seu lugar  """
-
+```
+ Agentes são sitemas independentes que operam tarefas em seu lugar 
+ 
+```
 * Workflow é a sequencia de passos para atingir o objetivo desejado, seja ele commitar um push no git, ou fazer uma pesquisa profunda
 
 ## Caracteristicas principais dos agents
