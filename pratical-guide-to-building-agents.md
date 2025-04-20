@@ -69,10 +69,11 @@ Cada ferramente deve ter uma definição padronizada, permetindo flexibilidade e
 
 **Melhores práticas para instruções**
 
-| :----- | :------- |
-| Use documentação existente | Quando criar rotinas, use documentos prontos, documentação de  processos ou banco de conhecimento para oferecer contexto aos modelos |
-| Solicite aos agentes dividir tarefas | Ao acessar documentos densos, providencie um pequeno e claro passo a passo para reduizir ambiguidade e ajudar o modelo a seguir instruções | 
-| Defina ações claras | Tenha certeza de que cada passo na rotina seja específico a uma ação ou resultado esperado, evitando cometer erros de interpretação | 
+| Princípio                         | Descrição                                                                                      |
+| :-------------------------------- | :--------------------------------------------------------------------------------------------- |
+| Use documentação existente        | Quando criar rotinas, use documentos prontos, documentação de processos ou banco de conhecimento para oferecer contexto aos modelos |
+| Solicite aos agentes dividir tarefas | Ao acessar documentos densos, providencie um pequeno e claro passo a passo para reduzir ambiguidade e ajudar o modelo a seguir instruções |
+| Defina ações claras               | Tenha certeza de que cada passo na rotina seja específico a uma ação ou resultado esperado, evitando cometer erros de interpretação |
 
 
 
