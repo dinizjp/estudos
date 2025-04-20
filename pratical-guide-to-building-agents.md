@@ -12,17 +12,17 @@
 
 2. **Pode possuir diversas ferramentas para interagir com sistemas externos, sendo elas guardadas com contexto permitindo tomar ações de forma dinamica dependendo do estado do workflow, operando de forma clara com "barreias protetoras"**
 
----
 
-## Quando devemos construir agents ?
+## Quando devemos construir agents?
 
-1. Quando temos decições complexas - que envolvem nuances, exceções ou decisões sensíveis ao contexto
+1. Quando temos decições complexas - Que envolvem nuances, exceções ou decisões sensíveis ao contexto
 
 2. Dificuldade de manter regras - Sistemas que se tornaram pesados demais devido a quantidade de regras presentes para funcionar, tornando atualizações caras ou sujeitas a erros 
 
 3. Grande dependência a dados não estruturados - Cenários que envolvem a interpretação de linguagem natural, extraindo significado de documentos ou interagindo com pessoas atráves de conversas 
 
-> Antes de construir um agent, entenda se seu problema se encaixa nesses criterios, caso não, soluções deterministicas devem ser o suficiente 
+> Antes de construir um agent, entenda se seu problema se encaixa nesses critérios, caso não, soluções deterministicas devem ser o suficiente 
+
 
 ## Fundamentos do agent desing 
 
@@ -61,7 +61,7 @@ Cada ferramente deve ter uma definição padronizada, permetindo flexibilidade e
 | Type | Descrição | Exemplo |
 |:---- | :-------: | :------ |
 | Data | Permite buscar informações necessárias para executar o workflow | Querys, Leitura de PDFs ou Docs, Pesquisa na web |
-| Ações | Permite interagir com sistemas e tomar ações como adicionar informações, criar documentos ou mandar msgs | Mandar Emails, fazer commit, Atender pessoas |
+| Ações | Permite interagir com sistemas e tomar ações como adicionar informações, criar documentos ou mandar mensagens | Mandar Emails, fazer commit, Atender pessoas |
 | Orquestração | Agents por eles mesmo podem servir de ferramentas para outros agents | Agent de pesquisa, Agent para escrita, etc... |
 
 
