@@ -8,15 +8,15 @@
 
 ## Caracteristicas principais dos agents
 
-1. Agents conseguem reconhecer o workflow quando completo, corrigir ações se necessário e em caso de falha, pode ser transferido o poder de volta para o usuário
+1. **Agents conseguem reconhecer o workflow quando completo, corrigir ações se necessário e em caso de falha, pode ser transferido o poder de volta para o usuário**
 
-2. Pode possuir diversas ferramentas para interagir com sistemas externos, sendo elas guardadas com contexto permitindo tomar ações de forma dinamica dependendo do estado do workflow, operando de forma clara com "barreias protetoras"
+2. **Pode possuir diversas ferramentas para interagir com sistemas externos, sendo elas guardadas com contexto permitindo tomar ações de forma dinamica dependendo do estado do workflow, operando de forma clara com "barreias protetoras"**
 
 ---
 
 ## Quando devemos construir agents ?
 
-1. Quando temos decições complexas - que envolvem nuancias, excessões ou decisões sensíveis ao contexto
+1. Quando temos decições complexas - que envolvem nuances, exceções ou decisões sensíveis ao contexto
 
 2. Dificuldade de manter regras - Sistemas que se tornaram pesados demais devido a quantidade de regras presentes para funcionar, tornando atualizações caras ou sujeitas a erros 
 
