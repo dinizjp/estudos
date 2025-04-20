@@ -39,7 +39,6 @@ De forma fundamental, o agente consiste em 3 componetes principais
 Diferentes modelos tem diferentes forças e tradeoffs relacionadno a complexidade da tarefa, latência e custo. Considere usar diferentes modelos para diferents tarefas no workflow, visto que nem toda tarefa necessita do modelo mais inteligente
 
 Uma simples tarefa simples pode ser passada para um modelo menor, que é  mais rápido, enquanto uma tarefa complexa que requer tomada de decições se beneficia de um modelo mais capaz
-
 A melhor abordagem seria criar um protótipo de agent com o modelo mais capaz para se estabelecer uma linha base boa de perfomance, e a partir dai, seguir trocando partes do workflow por modelos menores para ver se eles conseguem cumprir a função com resultados semelhates, assim você não precisa limitar as habilidades dos agents e criar um diagnostico de onde modelos mais inteligentes vão falhar ou ter sucesso 
 
 Em resumo, os principios para escolher os modelos são:
@@ -60,10 +59,22 @@ Cada ferramente deve ter uma definição padronizada, permetindo flexibilidade e
 
 | Type | Descrição | Exemplo |
 |:---- | :-------: | :------ |
-| Data | Permite buscar informações necessárias para executar o workflow | Querys, Leitura de PDFs ou Docs, Pesquisa na web |
+| Data | Permite buscar informações necessárias para executar o workflow | Querys, Leitura de PDFs ou Docs, Pesquisa na web |	
 | Ações | Permite interagir com sistemas e tomar ações como adicionar informações, criar documentos ou mandar mensagens | Mandar Emails, fazer commit, Atender pessoas |
 | Orquestração | Agents por eles mesmo podem servir de ferramentas para outros agents | Agent de pesquisa, Agent para escrita, etc... |
 
+## Configurando instruções 
+
+> Intruções de alta qualidade são essencias para LLMs, especialmente para agents se você quiser reduzir ambiguidade e melhorar a tomada de decição, reduzindo erros no workflow.
+
+**Melhores práticas para instruções**
+
+| Use documentação existente | Quando criar rotinas, use documentos prontos, documentação de  processos ou banco de conhecimento para oferecer contexto aos modelos |
+| Solicite aos agentes dividir tarefas | Ao acessar documentos densos, providencie um pequeno e claro passo a passo para reduizir ambiguidade e ajudar o modelo a seguir instruções |
+| Defina ações claras | Tenha certeza de que cada passo na rotina seja específico a uma ação ou resultado esperado, evitando cometer erros de interpretação |
 
 
-test
+
+
+
+
