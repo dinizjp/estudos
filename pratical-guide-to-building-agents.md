@@ -1,5 +1,5 @@
-# Pratical guide to building agents from OpenAI
 
+# Pratical guide to building agents from OpenAI
 > Agentes são sitemas independentes que operam tarefas em seu lugar 
  
 > Workflow é a sequencia de passos para atingir o objetivo desejado, seja ele commitar um push no git, ou fazer uma pesquisa profunda
@@ -74,7 +74,10 @@ Cada ferramente deve ter uma definição padronizada, permetindo flexibilidade e
 | Use documentação existente        | Quando criar rotinas, use documentos prontos, documentação de processos ou banco de conhecimento para oferecer contexto aos modelos |
 | Solicite aos agentes dividir tarefas | Ao acessar documentos densos, providencie um pequeno e claro passo a passo para reduzir ambiguidade e ajudar o modelo a seguir instruções |
 | Defina ações claras               | Tenha certeza de que cada passo na rotina seja específico a uma ação ou resultado esperado, evitando cometer erros de interpretação |
+| Capture casos extremos | Interações na vida real causam pontos de descisão, como dados faltantes ou perguntas inesperadas, uma rotina robusta antecipa comportamentos comuns e inclue instruções de como lidar com essas intereções |
 
+
+> Podemos usar os modelos com raciocínio para escrever instruções   
 
 
 
