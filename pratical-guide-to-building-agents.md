@@ -116,4 +116,19 @@ Cada nova ferramenta expande suas capacidades sem forçar uma orquestração de 
 01 | Uma ferramenta de saída final é invocada, definido por um tipo de saída específico 
 02 | O modelo retorna uma resposta sem nenhuma ferramenta sem chamada ( mensagem direto para o usuário)
  
+> Uma abordagem eficiênte para gerenciar a complexidade sem ter que trocar para um multi-agent framework é usar modelos de prompts. Ao invés de manter diversos prompts individuais para casos distintos, use um modelo flexível que consegue aceitar variáveis
+
+**exemplo dado pela openai:**
+
+```
+You are a call center agent. You are interacting with {{user_first_name}} who has been a member for {{user_tenure}}. 
+The user's most common complains are about {{user complaint_categories}}.
+Greet the user, thank them for being a loyal customer, and answer any questions the user may have!
+```
+
+### Quando devo considerar mudar para múltiplos agents?
+
+> A recomendação geral é tentar maximizar primeiro as capacidades de um single-agent. Múltiplos agents pode tornar a separação de conceitos mais intuitiva, mas ao mesmo tempo adiciona complexidade e custos adicionais.
+
+
 
