@@ -105,5 +105,5 @@ Multi-agents systems | Onde um workflow é executado de maneira distribuída ent
 
 
 Single-agent:
-![alt text](https://github.com/dinizjp)
+![alt text](https://github.com/dinizjp/estudos/blob/main/imgs/single-agent.png)
 
