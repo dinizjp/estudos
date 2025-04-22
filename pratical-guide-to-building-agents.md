@@ -1,5 +1,5 @@
-
 # Pratical guide to building agents from OpenAI
+
 > Agentes são sitemas independentes que operam tarefas em seu lugar 
  
 > Workflow é a sequencia de passos para atingir o objetivo desejado, seja ele commitar um push no git, ou fazer uma pesquisa profunda
@@ -77,7 +77,7 @@ Cada ferramente deve ter uma definição padronizada, permetindo flexibilidade e
 | Capture casos extremos | Interações na vida real causam pontos de descisão, como dados faltantes ou perguntas inesperadas, uma rotina robusta antecipa comportamentos comuns e inclue instruções de como lidar com essas intereções |
 
 
-> Podemos usar os modelos com raciocínio para escrever instruções   
+> Podemos usar os modelos com raciocínio para escrever instruções  
 
 
 
