@@ -111,7 +111,9 @@ Cada nova ferramenta expande suas capacidades sem forçar uma orquestração de 
 
 > Toda abordagem de orquestração necessita de um conceito de **"execução"**, tipicamente implementado como um loop que permite o agent operar até que tenha uma condição de saída. Condições de saída comuns incluem chamada para as ferramentas, uma estrutura de saída, erros ou atingir o número máximo de voltas
 
-**Por exemplo:** Agents SDK, agents são inciados com o método ```Runner.run()``` o que roda em loop até que atinja: 
+**Por exemplo:** Em Agents SDK, agents são inciados com o método ```Runner.run()``` o que roda em loop até que atinja: 
 
-01 | 
-02 |  
+01 | Uma ferramenta de saída final é invocada, definido por um tipo de saída específico 
+02 | O modelo retorna uma resposta sem nenhuma ferramenta sem chamada ( mensagem direto para o usuário)
+ 
+
