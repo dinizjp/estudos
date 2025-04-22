@@ -103,7 +103,15 @@ Multi-agents systems | Onde um workflow é executado de maneira distribuída ent
 
 ### Single-agent systems 
 
+Um único agent consegue lidar com muitas tarefas adicionado ferramentas gradualmente, tentando manter a complexidade gerenciável e simplificando a avaliação e manutenção. 
 
-Single-agent:
+Cada nova ferramenta expande suas capacidades sem forçar uma orquestração de vários agents de maneira prematura 
+
 ![alt text](https://github.com/dinizjp/estudos/blob/main/imgs/single-agent.png)
 
+> Toda abordagem de orquestração necessita de um conceito de **"execução"**, tipicamente implementado como um loop que permite o agent operar até que tenha uma condição de saída. Condições de saída comuns incluem chamada para as ferramentas, uma estrutura de saída, erros ou atingir o número máximo de voltas
+
+**Por exemplo:** Agents SDK, agents são inciados com o método ```Runner.run()``` o que roda em loop até que atinja: 
+
+01 | 
+02 |  
