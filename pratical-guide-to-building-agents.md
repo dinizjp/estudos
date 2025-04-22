@@ -77,9 +77,29 @@ Cada ferramente deve ter uma definição padronizada, permetindo flexibilidade e
 | Capture casos extremos | Interações na vida real causam pontos de descisão, como dados faltantes ou perguntas inesperadas, uma rotina robusta antecipa comportamentos comuns e inclue instruções de como lidar com essas intereções |
 
 
-> Podemos usar os modelos com raciocínio para escrever instruções  
+> Podemos usar os modelos com raciocínio para escrever instruções automaticamente a partir de uma documentação 
 
+Exemplo de prompt descrito no pdf:
 
+``` 
+You are an expert in writing instructions for an LLM agent. Convert the following help center document into a clear set of instructions, written in a numbered list.
+The document will be a policy followed by an LLM. Ensure that there is no ambiguity, and that the instructions are written as directions for an agent.
+The help center document to convert is the following {{help_center_doc}}  
+
+``` 
+
+## Orquestração 
+
+Com os componentes básicos no lugar, podemos considerar padrões de orquestração para ajudar o agent a executar o workflow de maneira eficiênte 
+
+> Por mais que seja tendador começar a construir uma arquitetura complexa de inicio, é recomendado usar uma abordagem incremental para garantir um maior sucesso 
+
+Em geral, padrões de orquestração seguem duas categorias:
+
+Categoria | Descrição 
+:-------- | :---------
+Single-agent systems | Onde um unico modelo é equipado com ferramentas apropriadas e instruções para executar workflows em loops 
+Multiagents systems | Onde um workflow é executado de maneira distribuída entre múltiplos agents coordenados 
 
 
 
