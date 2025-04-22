@@ -94,12 +94,16 @@ Com os componentes básicos no lugar, podemos considerar padrões de orquestraç
 
 > Por mais que seja tendador começar a construir uma arquitetura complexa de inicio, é recomendado usar uma abordagem incremental para garantir um maior sucesso 
 
-Em geral, padrões de orquestração seguem duas categorias:
+Em geral, padrões de orquestração seguem duas **categorias**:
 
 Categoria | Descrição 
 :-------- | :---------
 Single-agent systems | Onde um unico modelo é equipado com ferramentas apropriadas e instruções para executar workflows em loops 
-Multiagents systems | Onde um workflow é executado de maneira distribuída entre múltiplos agents coordenados 
+Multi-agents systems | Onde um workflow é executado de maneira distribuída entre múltiplos agents coordenados 
+
+### Single-agent systems 
 
 
+Single-agent:
+![alt text](https://github.com/dinizjp)
 
