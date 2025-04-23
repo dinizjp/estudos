@@ -159,3 +159,5 @@ Papel do agente principal | Gerencia fluxo de tarefas, decide qual agente chamar
 Exemplo mental | Um gerente em uma empresa, distribuindo tarefas para especialistas. | Um time de colegas, onde cada um sabe o que faz melhor e coopera.
 Vantagem | Simples de orquestrar e debugar. | Mais flexível e adaptável. Escala bem com domínios complexos.
 Desvantagem | O gerente pode virar gargalo ou ponto único de falha. | Comunicação mais complexa, risco de loops ou perda de contexto.
+
+
