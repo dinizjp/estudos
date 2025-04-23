@@ -119,7 +119,7 @@ Cada nova ferramenta expande suas capacidades sem forçar uma orquestração de 
 | 02  | O modelo retorna uma resposta sem uso de ferramenta (mensagem direta para o usuário)                 |
 
  
-> Uma abordagem eficiênte para gerenciar a complexidade sem ter que trocar para um multi-agent framework é usar modelos de prompts. Ao invés de manter diversos prompts individuais para casos distintos, use um modelo flexível que consegue aceitar variáveis
+> Uma abordagem eficiênte para gerenciar a complexidade sem ter que trocar para um multi-agent framework é usar modelos de prompts. Ao invés de manter diversos prompts individuais para casos distintos, use um modelo flexível. que consegue aceitar variáveis
 
 **exemplo dado pela openai:**
 
@@ -134,4 +134,21 @@ Greet the user, thank them for being a loyal customer, and answer any questions 
 > A recomendação geral é tentar maximizar primeiro as capacidades de um single-agent. Múltiplos agents pode tornar a separação de conceitos mais intuitiva, mas ao mesmo tempo adiciona complexidade e custos adicionais.
 
 
+**Um guia prático para dividir agents inclui:**
+
+> Lógica complexa: Quando prompts contém muitas instruções condicionais (várias ramificações de if-then-else ) e os modelos ficam difíceis de escalar, considere dividir cada seguimento lógico em agents separados.
+ 
+
+> Sobrecarga nas ferramentas: O problema não está na quantidade de ferramentas, mas sim a similaridade e sobreposição entre elas. Use múltiplos agents se mesmo após melhorar a clareza das ferramentas - dando nomes mais descritivos, definindo parâmetros de forma precisa e adicionando descrições detalhadas - o desempenho não melhorar. 
+
+
+## Multi-agent systems 
+
+Enquanto multi-agents systems podem ser projetados de diversas maneiras para workflows específicos, eles se descatacam em duas principais categorias
+
+1. **Manager (Agents como ferramentas)**
+> Um agent "genrente" central coordena vários agents especializados por meio de chamadas de ferramentas, sendo que cada um lida com uma tarefa ou domínio específico. 
+
+2. **Decentralized (Agents passando tarefas entre si)**
+> Vários agents operam como pares, repassando tarefas entre si com base em suas especializações. 
 
