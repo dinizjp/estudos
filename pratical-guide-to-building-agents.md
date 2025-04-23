@@ -113,9 +113,11 @@ Cada nova ferramenta expande suas capacidades sem forçar uma orquestração de 
 
 **Por exemplo:** Em Agents SDK, agents são inciados com o método ```Runner.run()``` o que roda em loop até que atinja: 
 
-|    |
-| 01 | Uma ferramenta de saída final é invocada, definido por um tipo de saída específico 
-| 02 | O modelo retorna uma resposta sem nenhuma ferramenta sem chamada ( mensagem direto para o usuário)
+| Nº  | Descrição                                                                                           |
+| :-- | :-------------------------------------------------------------------------------------------------- |
+| 01  | Uma ferramenta de saída final é invocada, definida por um tipo de saída específico                   |
+| 02  | O modelo retorna uma resposta sem uso de ferramenta (mensagem direta para o usuário)                 |
+
  
 > Uma abordagem eficiênte para gerenciar a complexidade sem ter que trocar para um multi-agent framework é usar modelos de prompts. Ao invés de manter diversos prompts individuais para casos distintos, use um modelo flexível que consegue aceitar variáveis
 
