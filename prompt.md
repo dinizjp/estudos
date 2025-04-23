@@ -37,12 +37,12 @@ Exemplo: Crie uma história de magia usando o Estilo do Autor de senhor dos ané
 
 Delimitadores - Use para separar exemplos, contextos específicos, ideias 
 
-"""
-- ####
-- ’’’’
-- ||||
+
+- " #### "
+- " ’’’’ "
+- " |||| " 
 - " ```` "
-"""
+
 
 Saída Estruturada - Use para criar consistência na saída da resposta 
 
