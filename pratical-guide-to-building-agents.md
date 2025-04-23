@@ -164,11 +164,11 @@ Desvantagem | O gerente pode virar gargalo ou ponto único de falha. | Comunica�
 
 **Quando usar o padrão gerente:**
 
-* Fluxos de trabalho simples: Quando você precisa que as tarefas sejam realizadas de forma controlada e sequencial.
+* **Fluxos de trabalho simples:** Quando você precisa que as tarefas sejam realizadas de forma controlada e sequencial.
 
-* Controle centralizado: Quando a experiência do usuário precisa ser mediada por um único agente para evitar confusão e sobrecarga de informações.
+* **Controle centralizado:** Quando a experiência do usuário precisa ser mediada por um único agente para evitar confusão e sobrecarga de informações.
 
-* Tarefas especializadas e coordenadas: Quando as tarefas exigem agentes especializados, mas você ainda quer ter controle completo sobre o fluxo de trabalho.
+* **Tarefas especializadas e coordenadas:** Quando as tarefas exigem agentes especializados, mas você ainda quer ter controle completo sobre o fluxo de trabalho.
 
 ![alt text](https://github.com/dinizjp/estudos/blob/main/imgs/manager_pattern.png)
 
