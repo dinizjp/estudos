@@ -160,4 +160,7 @@ Vantagem | Simples de orquestrar e debugar. | Mais flexível e adaptável. Escal
 Desvantagem | O gerente pode virar gargalo ou ponto único de falha. | Comunicação mais complexa, risco de loops ou perda de contexto.
 
 
+### Manager pattern 
+
 ![alt text](https://github.com/dinizjp/estudos/blob/main/imgs/manager_pattern.png)
+
