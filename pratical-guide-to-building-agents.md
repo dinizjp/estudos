@@ -153,6 +153,7 @@ Enquanto multi-agents systems podem ser projetados de diversas maneiras para wor
 > Vários agents operam como pares, repassando tarefas entre si com base em suas especializações. 
 
 Característica | Manager (Centralizado) | Decentralized (Descentralizado)
+ :-------- | :----------- | :-----------------
 Estrutura | Um agente principal controla os demais como se fossem ferramentas. | Todos os agentes são autônomos e colaboram entre si.
 Papel do agente principal | Gerencia fluxo de tarefas, decide qual agente chamar. | Não há “chefe”. Agentes decidem dinamicamente a quem passar a tarefa.
 Exemplo mental | Um gerente em uma empresa, distribuindo tarefas para especialistas. | Um time de colegas, onde cada um sabe o que faz melhor e coopera.
