@@ -12,7 +12,6 @@
 
 2. **Pode possuir diversas ferramentas para interagir com sistemas externos, sendo elas guardadas com contexto permitindo tomar ações de forma dinamica dependendo do estado do workflow, operando de forma clara com "barreias protetoras"**
 
-
 ## Quando devemos construir agents?
 
 1. Quando temos decições complexas - Que envolvem nuances, exceções ou decisões sensíveis ao contexto
@@ -161,3 +160,4 @@ Vantagem | Simples de orquestrar e debugar. | Mais flexível e adaptável. Escal
 Desvantagem | O gerente pode virar gargalo ou ponto único de falha. | Comunicação mais complexa, risco de loops ou perda de contexto.
 
 
+![alt text](https://github.com/dinizjp/estudos/blob/main/imgs/manager_pattern.png)
