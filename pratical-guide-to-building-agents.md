@@ -162,7 +162,7 @@ Desvantagem | O gerente pode virar gargalo ou ponto único de falha. | Comunica�
 
 ### Manager pattern 
 
-**Quando Usar o Padrão do Gerente:**
+**Quando usar o padrão gerente:**
 
 * Fluxos de trabalho simples: Quando você precisa que as tarefas sejam realizadas de forma controlada e sequencial.
 
